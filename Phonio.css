@@ -1,0 +1,10 @@
+.title{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+img{
+    width: 100vh;
+    filter: drop-shadow(100px 100px 15px rgba(0, 0, 0, 0.5));
+}
