@@ -4,7 +4,47 @@
    
     
 }
-img{
+.title img{
     width: 100vh;
-    filter: drop-shadow(100px 100px 15px rgba(0, 0, 0, 0.5));
+
+}
+.title h1{
+    position: absolute;
+    color:white;
+    text-align: center;
+    font-size: 50px;
+    font-family: URW Chancery L, cursive;
+    top: 120px;
+
+}
+.phones {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 100px;
+    margin: 2%;
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.5));
+}
+.phones img{
+    height: 300px;
+    width: 300px;
+}
+.phones article{
+    padding: 4px;
+    margin: auto;
+}
+.phones figcaption {
+    background-color: white;
+    color: black;
+    padding: 2px;
+    text-align: center;
+}
+.phones h3{
+    font-size: 22px;
+}
+
+.phones p{
+    color: red;
+    font-size: 23px;
 }
