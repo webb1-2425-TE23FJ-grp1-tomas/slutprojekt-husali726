@@ -1,22 +1,39 @@
 .title{
     display: flex;
     justify-content: center;
-   
-    
 }
 .title img{
     width: 100vh;
-
 }
 .title h1{
     position: absolute;
-    color:white;
     text-align: center;
     font-size: 50px;
+    color: White;
     font-family: URW Chancery L, cursive;
     top: 120px;
-
 }
+.menu {
+    position: absolute;
+    right: 27%;
+    top: 2%;
+}
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.menu li{
+    list-style: none;
+}
+.menu a:link{
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+
+
 .phones {
     display: grid;
     grid-template-columns: repeat(3, 300px);
@@ -31,6 +48,7 @@
     width: 300px;
 }
 .phones article{
+    cursor: pointer;
     padding: 4px;
     margin: auto;
 }
@@ -43,8 +61,11 @@
 .phones h3{
     font-size: 22px;
 }
-
 .phones p{
     color: red;
     font-size: 23px;
+}
+.phones img:hover{
+    height: 310px;
+    width: 310px;
 }
