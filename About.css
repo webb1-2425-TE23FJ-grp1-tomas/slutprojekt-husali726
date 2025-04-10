@@ -1,0 +1,40 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+.title img{
+    width: 100vh;
+}
+.title h1{
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    font-family: URW Chancery L, cursive;
+    top: 20px;
+}
+.menu {
+    position: absolute;
+    right: 27%;
+    top: 2%;
+}
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.menu li{
+    list-style: none;
+}
+.menu a:link{
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+#undertext{
+    display: grid;
+    grid-template-columns: 100vh;
+    justify-content: center;
+
+}
