@@ -1,3 +1,10 @@
+const btn = document.querySelector('.btn');
+const target = document.querySelector('.cookies');
+
+btn.addEventListener('click', () => {
+    cookies.classList.add('active'); 
+});
+
 const lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)

@@ -1,3 +1,47 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh;
+    text-align: center;
+}
+.container{
+    width: 1600px;
+    margin: auto;
+}
+.subcontainer{
+    width: 85%;
+    margin:auto ;
+}
+#cookies{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 2;
+}
+.cookies{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.cookies a{
+    color: rgb(88, 194, 243);
+}
+@media(max-width: 1600px){
+    .container{
+        width:100%;
+    }
+}
+@media(max-width: 1024px){
+    .cookies{
+        padding:10px 0;
+    }
+}
 .title{
     display: flex;
     justify-content: center;
@@ -71,7 +115,7 @@
 }
 #lightbox{
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     top: 0;
     width: 100%;
     height: 100%;
@@ -102,12 +146,14 @@
 
 .title h1 {
     font-size: 30px;
-    margin-top: 2%;
+    top: 90px;
 }
 
-.menu {
-    position: absolute;
-    top: 1%;
+#menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 15px;
 }
 
 
@@ -163,18 +209,24 @@
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 840px) {
     .title img {
         width: 80%; 
     }
 
     .title h1 {
         font-size: 24px; 
-        top: 50px;
+        top: 35%;
+    }
+    #menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 10px;
     }
 
     .phones {
-        grid-template-columns: repeat(3, 12vh);
+        grid-template-columns: repeat(2, 12vh);
     }
 
     .phones img {
@@ -190,14 +242,59 @@
 @media (max-width: 375px) {
     .title img {
         width: 90%; 
+        height: 90%;
+    }
+    .title h1{
+        top: 25%;
+    }
+    #menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    font-size: 7px;
     }
 
     .phones {
-        grid-template-columns: 1fr; 
+       grid-template-columns: repeat(2, 7vh);
     }
 
     .phones img {
-        height: 10vh;
-        width: 10vh;
+        height: 7vh;
+        width: 7vh;
     }
+    .phones  h3 {
+        font-size: 10px;
+    }
+    .phones  p {
+        font-size: 10px;
+    }
+
+}
+@media (max-width: 250px) {
+    .title img {
+        width: 200px; 
+        height: 75px;
+    }
+    .title h1{
+        top: 0%;
+    }
+    #menu{
+    display: none;
+    }
+
+    .phones {
+       grid-template-columns: repeat(1, 7vh);
+    }
+
+    .phones img {
+        height: 7vh;
+        width: 7vh;
+    }
+    .phones  h3 {
+        font-size: 10px;
+    }
+    .phones  p {
+        font-size: 10px;
+    }
+
 }
