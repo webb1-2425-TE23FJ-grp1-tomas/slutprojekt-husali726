@@ -20,6 +20,7 @@
     color: white;
     background-color: rgba(0, 0, 0, 0.61);
     z-index: 2;
+    display: none;
 }
 .cookies{
     min-height: 70px;
@@ -31,6 +32,9 @@
 }
 .cookies a{
     color: rgb(88, 194, 243);
+}
+#cookies-btn{
+    cursor: pointer;
 }
 @media(max-width: 1600px){
     .container{
